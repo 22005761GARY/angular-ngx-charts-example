@@ -1,0 +1,16 @@
+<div>
+  <ngx-charts-pie-chart
+  [results]="productSales"
+  [view]="view"
+  [scheme]="colorScheme"
+  [legend]="showLegend"
+  [legendPosition]="legendPosition"
+  [labels]="showLabels"
+  [doughnut]="isDoughnut"
+  [trimLabels]="trimLabels"
+  [arcWidth]="arcWidth"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)">
+  </ngx-charts-pie-chart>
+</div>
